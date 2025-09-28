@@ -38,10 +38,75 @@ Coursera: Cryptography I
 
 🐍 Python — Criptografia AES
 
-Descrição: Este código demonstra criptografia simétrica AES em CBC mode.
+> Descrição: Este código demonstra criptografia simétrica AES em CBC mode.
 
-from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+
+
+<details>
+<summary style="background-color:#2c3e50;color:white;padding:5px;border-radius:5px;cursor:pointer;">Mostrar código Python AES</summary>from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
+import os
+
+key = os.urandom(32)
+iv = os.urandom(16)
+cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+enc = cipher.encryptor()
+plaintext = b"Mensagem secreta 16b"
+ciphertext = enc.update(plaintext) + enc.finalize()
+print("Texto cifrado:", ciphertext)
+
+</details>🐍 Python — Hash SHA-256
+
+> Descrição: Gera um hash SHA-256 de um texto.
+
+
+
+<details>
+<summary style="background-color:#27ae60;color:white;padding:5px;border-radius:5px;cursor:pointer;">Mostrar código Hash SHA-256</summary>import hashlib
+
+texto = "meu texto para hash".encode('utf-8')
+hash_obj = hashlib.sha256(texto)
+print("Hash SHA-256:", hash_obj.hexdigest())
+
+</details>💻 JavaScript — Servidor Express
+
+> Descrição: Cria um servidor web simples usando Express.js.
+
+
+
+<details>
+<summary style="background-color:#2980b9;color:white;padding:5px;border-radius:5px;cursor:pointer;">Mostrar código Servidor Express</summary>const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Olá, mundo!');
+});
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+
+</details>💻 JavaScript — Hash SHA-256
+
+> Descrição: Gera um hash SHA-256 em Node.js.
+
+
+
+<details>
+<summary style="background-color:#8e44ad;color:white;padding:5px;border-radius:5px;cursor:pointer;">Mostrar código Hash SHA-256 JS</summary>const crypto = require('crypto');
+const texto = "meu texto para hash";
+const hash = crypto.createHash('sha256').update(texto).digest('hex');
+console.log("Hash SHA-256:", hash);
+
+</details>
+---
+
+🔍 Meios Legais de “Quebra” de Criptografia
+
+Conceitos: criptoanálise, engenharia reversa, pentesting autorizado.
+
+Ferramentas: John the Ripper, Hashcat, Ghidra, Frida, Wireshark, CyberChef.
+
+Recursos: Serious Cryptography, Cryptography I — Coursera, TryHackMe, Hack The Box.
+
 import os
 
 # Gera chave e vetor de inicialização (IV)
