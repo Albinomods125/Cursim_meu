@@ -1,13 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo Pessoal: Cibersegurança & Criptografia</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            color: #24292e;
+        }
+        h1, h2, h3, h4 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 24px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 16px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        code {
+            font-family: monospace;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dfe2e5;
+            padding: 8px 13px;
+            text-align: left;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            margin-right: 5px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+        .status-badge { background-color: #0077b6; }
+        .foco-badge { background-color: #28a745; }
+        .linguagens-badge { background-color: #ffc107; color: #333; }
+        .navigation-table td:nth-child(3) {
+            text-align: center;
+        }
+        .navigation-table a {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .navigation-table a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
-🔒 Curso Completo Pessoal: Cibersegurança & Criptografia
-<p align="center">
-<img src="https://img.shields.io/badge/Status-Em%20Andamento-blue.svg" alt="Status do Projeto">
-<img src="https://img.shields.io/badge/Foco-Segurança%20Ética-brightgreen.svg" alt="Foco Principal">
-<img src="https://img.shields.io/badge/Linguagens-Python%20%7C%20JavaScript-yellow.svg" alt="Linguagens Utilizadas">
-</p>
-Este README é o seu guia completo e consolidado para o estudo aprofundado em Cibersegurança e Criptografia. Ele reúne recursos de aprendizado, códigos práticos, ferramentas essenciais e métodos éticos de análise, ideal para quem busca dominar a segurança digital do zero.
-🚀 Comece Aqui
-Utilize os botões abaixo para navegar rapidamente pelas principais seções deste guia:
+    <h1 id="curso-completo-pessoal-cibersegurança--criptografia">🔒 Curso Completo Pessoal: Cibersegurança & Criptografia</h1>
+
+    <p align="center">
+        <span class="badge status-badge">Status: Em Andamento</span>
+        <span class="badge foco-badge">Foco: Segurança Ética</span>
+        <span class="badge linguagens-badge">Linguagens: Python | JavaScript</span>
+    </p>
+
+    <p>Este <strong>HTML/README</strong> é o seu guia completo e consolidado para o estudo aprofundado em <strong>Cibersegurança e Criptografia</strong>. Ele reúne recursos de aprendizado, códigos práticos, ferramentas essenciais e métodos éticos de análise, ideal para quem busca dominar a segurança digital do zero e construir um portfólio robusto.</p>
+
+    <hr>
+
+    <h2 id="comece-aqui-navegação-rápida">🚀 Comece Aqui (Navegação Rápida)</h2>
+
+    <p>Utilize os botões abaixo para navegar instantaneamente pelas principais seções deste guia:</p>
+
+    <table class="navigation-table">
+        <thead>
+            <tr>
+                <th>Seção</th>
+                <th>Descrição</th>
+                <th>Link Direto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>📺 Vídeos & Tutoriais</td>
+                <td>Canais e playlists para aprendizado visual.</td>
+                <td><a href="#vídeos-e-tutoriais">Assistir Agora</a></td>
+            </tr>
+            <tr>
+                <td>🌐 Plataformas de Estudo</td>
+                <td>Sites interativos, labs e cursos gratuitos.</td>
+                <td><a href="#plataformas-e-cursos-online">Acessar Labs</a></td>
+            </tr>
+            <tr>
+                <td>💻 Códigos & Exemplos</td>
+                <td>Demonstrações práticas em Python e JavaScript (acessível).</td>
+                <td><a href="#códigos-e-exemplos-práticos-acessibilidade-reforçada">Ver Código</a></td>
+            </tr>
+            <tr>
+                <td>🔍 Quebra Ética & Labs</td>
+                <td>Conceitos, ferramentas e exercícios de criptoanálise.</td>
+                <td><a href="#análise-e-laboratórios-éticos">Explorar Ferramentas</a></td>
+            </tr>
+            <tr>
+                <td>📅 Plano de Estudo</td>
+                <td>Cronograma sugerido para organizar sua jornada.</td>
+                <td><a href="#plano-semanal-de-estudo">Ver Cronograma</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2 id="vídeos-e-tutoriais">📺 Vídeos e Tutoriais</h2>
+
+    <p>Canalize seu aprendizado com playlists e tutoriais de especialistas na área:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Canal/Série</th>
+                <th>Tópico Principal</th>
+                <th>Acesso Rápido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>CrashCourse Computer Science</strong></td>
+                <td>Fundamentos de Ciência da Computação</td>
+                <td><a href="https://www.youtube.com/results?search_query=CrashCourse+Computer+Science" target="_blank">Assistir no YouTube</a></td>
+            </tr>
+            <tr>
+                <td><strong>The Cyber Mentor</strong></td>
+                <td>Hacking Ético e Pentesting</td>
+                <td><a href="https://www.youtube.com/@TheCyberMentor" target="_blank">Acessar Canal</a></td>
+            </tr>
+            <tr>
+                <td><strong>Tech With Tim</strong></td>
+                <td>Programação para Cibersegurança</td>
+                <td><a href="https://www.youtube.com/@TechWithTim" target="_blank">Acessar Canal</a></td>
+            </tr>
+            <tr>
+                <td><strong>NetworkChuck</strong></td>
+                <td>Redes e Segurança</td>
+                <td><a href="https://www.youtube.com/@NetworkChuck" target="_blank">Acessar Canal</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2 id="plataformas-e-cursos-online">🌐 Plataformas e Cursos Online</h2>
+
+    <h3 id="sites-para-estudo-e-labs-interativos">📌 Sites para Estudo e Labs Interativos</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Plataforma</th>
+                <th>Foco</th>
+                <th>Acesso Rápido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>OWASP</strong></td>
+                <td>Segurança de Aplicações Web (Top 10)</td>
+                <td><a href="https://owasp.org" target="_blank">Acessar OWASP</a></td>
+            </tr>
+            <tr>
+                <td><strong>TryHackMe</strong></td>
+                <td>Labs Guiados de Hacking para Iniciantes</td>
+                <td><a href="https://tryhackme.com" target="_blank">Acessar TryHackMe</a></td>
+            </tr>
+            <tr>
+                <td><strong>Hack The Box</strong></td>
+                <td>Desafios Reais (CTFs) de Pentesting</td>
+                <td><a href="https://www.hackthebox.com" target="_blank">Acessar HTB</a></td>
+            </tr>
+            <tr>
+                <td><strong>OverTheWire</strong></td>
+                <td>Wargames de Segurança via SSH</td>
+                <td><a href="https://overthewire.org/wargames/" target="_blank">Acessar OverTheWire</a></td>
+            </tr>
+            <tr>
+                <td><strong>Cryptography.io</strong></td>
+                <td>Referência em Implementação de Criptografia</td>
+                <td><a href="https://cryptography.io" target="_blank">Acessar Cryptography.io</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 id="cursos-online-gratuitos">📚 Cursos Online Gratuitos</h3>
+    <ul>
+        <li><strong>Cybrary:</strong> Várias trilhas de carreira em segurança.</li>
+        <li><strong>FreeCodeCamp:</strong> Fundamentos de programação e segurança web.</li>
+        <li><strong>Coursera: Cryptography I:</strong> Curso universitário fundamental em criptografia.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="códigos-e-exemplos-práticos-acessibilidade-reforçada">💻 Códigos e Exemplos Práticos (Acessibilidade Reforçada)</h2>
+
+    <p>Esta seção contém exemplos de código funcional. O código foi formatado com quebras de linha mais frequentes e inclui <strong>comentários detalhados em Português</strong> sobre sua função.</p>
+
+    <h3 id="python">🐍 Python</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Exemplo</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Criptografia AES (CBC)</strong></td>
+                <td>Cifra uma mensagem utilizando um algoritmo simétrico robusto.</td>
+            </tr>
+            <tr>
+                <td><strong>Hash SHA-256</strong></td>
+                <td>Gera um hash imutável de uma string, fundamental para integridade.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pre><code>
+# Criptografia AES em Python (Exemplo)
+from cryptography.hazmat.primitives.ciphers import (
+    Cipher, algorithms, modes
+)
+from cryptography.hazmat.backends import default_backend
+import os
+
+# 1. Geração de chave e vetor (IV)
+key = os.urandom(32)    # Chave aleatória de 32 bytes (AES-256)
+iv = os.urandom(16)     # Vetor de Inicialização (IV)
+
+# 2. Criação do objeto Cipher com AES e modo CBC
+cipher = Cipher(
+    algorithms.AES(key), 
+    modes.CBC(iv), 
+    backend=default_backend()
+)
+
+# 3. Processo de criptografia
+enc = cipher.encryptor()
+plaintext = b"Mensagem secreta 16b"
+ciphertext = enc.update(plaintext) + enc.finalize()
+
+print("Texto cifrado:", ciphertext) 
+
+# ---
+
+# Hash SHA-256 em Python (Exemplo)
+import hashlib
+
+# 1. Conversão do texto para bytes
+texto = "meu texto para hash".encode('utf-8')
+
+# 2. Geração do hash SHA-256
+hash_obj = hashlib.sha256(texto)
+
+# 3. Impressão do hash em formato hexadecimal
+print("Hash SHA-256:", hash_obj.hexdigest())
+    </code></pre>
+
+    <h3 id="javascript-node.js">💻 JavaScript (Node.js)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Exemplo</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Servidor Express Simples</strong></td>
+                <td>Configuração básica de um servidor web para prática de segurança.</td>
+            </tr>
+            <tr>
+                <td><strong>Hash SHA-256 (Node.js)</strong></td>
+                <td>Implementação de hashing usando o módulo <code>crypto</code>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pre><code>
+// Servidor Express em JavaScript (Exemplo)
+const express = require('express'); 
+const app = express(); 
+
+// Cria uma rota raiz
+app.get('/', (req, res) => { 
+    res.send('Olá, mundo!'); 
+}); 
+
+// Inicia o servidor na porta 3000
+app.listen(3000, () => 
+    console.log('Servidor rodando na porta 3000')
+); 
+
+// ---
+
+// Hash SHA-256 em JavaScript (Exemplo)
+const crypto = require('crypto'); 
+const texto = "meu texto para hash"; 
+
+// 1. Criação do hash SHA-256
+const hash = crypto
+    .createHash('sha256')
+    .update(texto)
+    .digest('hex'); // Formato de saída hexadecimal
+
+// 2. Impressão do hash
+console.log("Hash SHA-256:", hash);
+    </code></pre>
+
+    <hr>
+
+    <h2 id="análise-e-laboratórios-éticos">🔍 Análise e Laboratórios Éticos</h2>
+
+    <p>Estudo de métodos e ferramentas para a <strong>criptoanálise</strong> e <strong>quebra ética</strong> de segurança, sempre em ambientes controlados (Labs) e com autorização (pentesting autorizado).</p>
+
+    <h3 id="conceitos-chave">📌 Conceitos-Chave</h3>
+    <ul>
+        <li><strong>Criptoanálise:</strong> Estudo de métodos para obter o significado de informações criptografadas sem a chave secreta.</li>
+        <li>Engenharia Reversa</li>
+        <li>Pentesting Autorizado</li>
+        <li>Ataques de Força Bruta (em laboratório)</li>
+        <li>Análise Estática e Dinâmica</li>
+    </ul>
+
+    <h3 id="ferramentas-essenciais">🛠 Ferramentas Essenciais</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Ferramenta</th>
+                <th>Uso Principal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>John the Ripper</strong></td>
+                <td>Teste de quebra de senhas (password cracking).</td>
+            </tr>
+            <tr>
+                <td><strong>Hashcat</strong></td>
+                <td>Recuperação de senhas a partir de hashes.</td>
+            </tr>
+            <tr>
+                <td><strong>Ghidra</strong></td>
+                <td>Plataforma de Engenharia Reversa (Descompilação).</td>
+            </tr>
+            <tr>
+                <td><strong>Frida</strong></td>
+                <td>Injeção de scripts para modificar e inspecionar aplicativos (RE Dinâmica).</td>
+            </tr>
+            <tr>
+                <td><strong>Wireshark</strong></td>
+                <td>Análise de tráfego de rede e interceptação.</td>
+            </tr>
+            <tr>
+                <td><strong>CyberChef</strong></td>
+                <td>Ferramenta web para codificação/decodificação e criptografia.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 id="exercícios-éticos-labs">⚡ Exercícios Éticos (Labs)</h3>
+    <pre><code>
+# Python — Ataque de Força Bruta Simples (Lab)
+import hashlib 
+
+# Hash alvo (gerado a partir de "senha123")
+hash_obj = hashlib.sha256("senha123".encode()).hexdigest() 
+print("Hash gerado:", hash_obj) 
+
+# Lista de senhas a testar
+wordlist = ["senha", "123456", "senha123"] 
+
+# Teste de cada palavra
+for word in wordlist: 
+    test_hash = hashlib.sha256(word.encode()).hexdigest() 
+    if test_hash == hash_obj: 
+        print("Senha encontrada:", word)
+        break # Sai do loop após encontrar
+    </code></pre>
+
+    <hr>
+
+    <h2 id="plano-semanal-de-estudo">📅 Plano Semanal de Estudo</h2>
+
+    <p>Um cronograma sugerido para manter o foco e garantir a cobertura de tópicos cruciais:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Foco Semanal</th>
+                <th>Atividades Recomendadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Fase 1</strong></td>
+                <td>Fundamentos de programação e Criptografia (Coursera, vídeos).</td>
+            </tr>
+            <tr>
+                <td><strong>Fase 2</strong></td>
+                <td>Análise estática de apps e engenharia reversa básica (Ghidra, apktool).</td>
+            </tr>
+            <tr>
+                <td><strong>Fase 3</strong></td>
+                <td>Análise dinâmica, interceptação de tráfego e hooking (Frida, Burp Suite, Wireshark).</td>
+            </tr>
+            <tr>
+                <td><strong>Fase 4</strong></td>
+                <td>Projetos práticos de segurança (Web, Mobile ou Binário).</td>
+            </tr>
+            <tr>
+                <td><strong>Fase 5</strong></td>
+                <td>Revisão, documentação e Desafio Final (CTF/Lab complexo).</td>
+            </tr>
+            <tr>
+                <td><strong>Contínuo</strong></td>
+                <td>Participação em labs (TryHackMe, Hack The Box) e documentação de relatórios técnicos.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2 id="recursos-adicionais-e-ferramentas">📚 Recursos Adicionais e Ferramentas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Sugestões</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Livros</strong></td>
+                <td><strong>"Serious Cryptography"</strong>, <strong>"Cryptography Engineering"</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Comunidades</strong></td>
+                <td>Reddit <strong>r/netsec</strong>, Stack Overflow, GitHub Discussions</td>
+            </tr>
+            <tr>
+                <td><strong>Podcasts</strong></td>
+                <td><strong>Darknet Diaries</strong>, <strong>Risky Business</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Ferramentas de Dev</strong></td>
+                <td>Python (<code>cryptography</code>, <code>PyCryptodome</code>), Node.js (<code>Express</code>), Burp Suite Community, JADX, apktool.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2 id="contribuição">🤝 Contribuição</h2>
+
+    <p>Este projeto é um guia pessoal. Sinta-se à vontade para fazer um <strong>fork</strong> deste repositório e usá-lo como seu próprio plano de estudos! Sugestões e correções (via <strong>Pull Requests</strong>) são sempre bem-vindas.</p>
+
+</body>
+</html>
 | Seção | Descrição |
 |---|---|
 | 📺 Vídeos & Tutoriais | Links para canais e playlists de aprendizado. |
